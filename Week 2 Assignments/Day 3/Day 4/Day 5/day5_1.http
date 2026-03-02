@@ -1,0 +1,31 @@
+
+###Read for Product
+GET http://localhost:3000/products
+
+###Read for Product by brand
+GET http://localhost:3000/products/boat
+
+###Create a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"watch",
+    "brand":"fossil",
+    "price":2500
+}
+
+###update the product data
+PUT http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"boat rockerz 255",
+    "brand":"boat",
+    "price":2500
+}
+
+###delete the product data by id
+DELETE http://localhost:3000/products/2
