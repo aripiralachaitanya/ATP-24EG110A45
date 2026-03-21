@@ -1,0 +1,35 @@
+### Get All Users and Authors
+GET http://localhost:4000/admin-api/users
+
+###
+
+### Deactivate User
+PATCH http://localhost:4000/admin-api/users
+Content-Type: application/json
+
+{
+  "userId": "PUT_USER_ID_HERE",
+  "isUserActive": false
+}
+
+###
+
+### Activate User
+PATCH http://localhost:4000/admin-api/users
+Content-Type: application/json
+
+{
+  "userId": "PUT_USER_ID_HERE",
+  "isUserActive": true
+}
+
+###
+
+### Deactivate Author
+PATCH http://localhost:4000/admin-api/authors
+Content-Type: application/json
+
+{
+  "authorId": "PUT_AUTHOR_ID_HERE",
+  "isUserActive": false
+}

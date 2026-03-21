@@ -1,0 +1,13 @@
+### Read All Articles
+GET http://localhost:4000/user-api/articles
+
+###
+
+### Add Comment
+PUT http://localhost:4000/user-api/articles
+Content-Type: application/json
+
+{
+  "articleId": "PUT_ARTICLE_ID_HERE",
+  "comment": "This article is very informative!"
+}
